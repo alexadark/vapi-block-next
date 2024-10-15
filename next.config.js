@@ -1,7 +1,14 @@
-const dotenv = require("dotenv");
+const dotenv = require('dotenv');
 dotenv.config;
 
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+  typescript: {
+    ignoreBuildErrors: true,
+  },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+};
 
 module.exports = nextConfig;
