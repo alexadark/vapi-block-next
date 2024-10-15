@@ -1,11 +1,11 @@
-import Image from "next/image";
-import styles from "./page.module.css";
-import Orb from "@/components/orb";
+import Image from 'next/image';
+import styles from './page.module.css';
+import Orb from '@/components/orb';
 
 export default function Home() {
   return (
-    <main className="flex flex-col h-full items-center justify-between p-1">
-      <div className={styles.description}>
+    <main className="flex flex-col items-center justify-between h-full p-1">
+      {/* <div className={styles.description}>
         <p>
           Add VapiBlocks components to your Next.js project&nbsp;
           <code className={styles.code}>app/page.tsx</code>
@@ -19,7 +19,7 @@ export default function Home() {
             Orb by VapiBlocks
           </a>
         </div>
-      </div>
+      </div> */}
       <Orb />
     </main>
   );
